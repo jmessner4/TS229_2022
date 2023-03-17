@@ -1,0 +1,10 @@
+clear;
+close all;
+clc;
+
+load('data/adsb_msgs.mat');
+len = length(adsb_msgs(1,:));
+
+for i=1:len
+    res = bit2registre(adsb_msgs(:,i));
+    stru
